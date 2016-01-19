@@ -14,6 +14,7 @@ public class Calculate {
     String operator = s.nextLine();
     System.out.println("请输入第一个数字:");
     String numberB = s.nextLine();
+    // Differen point with Strategy pattern
     Operator op = OperatorFactory.createOperator(operator, numberA, numberB);
     System.out.println(op.doCalculate());
   }
