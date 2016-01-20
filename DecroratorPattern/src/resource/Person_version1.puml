@@ -2,16 +2,14 @@
 
 class Person{
 String name
+String Dressed=""
 +wearTshirt()
 +wearBigTrouser()
 +wearSneakers()
 +wearSuit()
 +wearTie()
 +wearLeatherShoes()
-+show()
++String show()
 }
-
-class Object
-Object <|-- Person
 
 @enduml

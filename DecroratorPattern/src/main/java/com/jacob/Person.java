@@ -1,38 +1,41 @@
+package com.jacob;
+
 /**
  * Created by LIUJA8 on 1/20/2016.
  */
 public class Person {
   private String name;
+  private String Dressed = "";
 
   public Person(String name) {
     this.name = name;
   }
 
   public void wearTshirt() {
-    System.out.println("大Tshirt ");
+    Dressed += "T-shirt ";
   }
 
   public void wearBigTrouser() {
-    System.out.println("垮裤 ");
+    Dressed += "BigTrouser ";
   }
 
   public void wearSneakers() {
-    System.out.println("破球鞋 ");
+    Dressed += "Sneakers ";
   }
 
   public void wearSuit() {
-    System.out.println("西服 ");
+    Dressed += "Suit ";
   }
 
   public void wearTie() {
-    System.out.println("领带 ");
+    Dressed += "Tie ";
   }
 
   public void wearLeatherShoes() {
-    System.out.println("皮鞋 ");
+    Dressed += "LeatherShoes ";
   }
 
-  public void show() {
-    System.out.println("装扮的" + name);
+  public String show() {
+    return Dressed + "Dressed " + name;
   }
 }
