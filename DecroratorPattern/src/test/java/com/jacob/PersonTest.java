@@ -14,9 +14,13 @@ public class PersonTest {
     Tshirt tshirt = new Tshirt();
     BigTrouser bigTrouser = new BigTrouser();
     Sneakers sneakers = new Sneakers();
-    Jacob.setDressed(tshirt.weared(Jacob.getDressed()));
-    Jacob.setDressed(bigTrouser.weared(Jacob.getDressed()));
-    Jacob.setDressed(sneakers.weared(Jacob.getDressed()));
+    tshirt.decorate(Jacob);
+    tshirt.show();
+    bigTrouser.decorate(Jacob);
+    bigTrouser.show();
+    sneakers.decorate(Jacob);
+    sneakers.show();
+    System.out.println(Jacob.getDressed());
     assertEquals(Jacob.show(), "T-shirt BigTrouser Sneakers Dressed Jacob");
   }
 
@@ -26,9 +30,12 @@ public class PersonTest {
     Suit suit = new Suit();
     Tie tie = new Tie();
     LeatherShoes leatherShoes = new LeatherShoes();
-    Jason.setDressed(suit.weared(Jason.getDressed()));
-    Jason.setDressed(tie.weared(Jason.getDressed()));
-    Jason.setDressed(leatherShoes.weared(Jason.getDressed()));
+    suit.decorate(Jason);
+    suit.show();
+    tie.decorate(Jason);
+    tie.show();
+    leatherShoes.decorate(Jason);
+    leatherShoes.show();
     assertEquals(Jason.show(), "Suit Tie LeatherShoes Dressed Jason");
   }
 }

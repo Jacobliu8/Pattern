@@ -5,8 +5,16 @@ package com.jacob;
  */
 public class LeatherShoes extends Finery {
 
+  public LeatherShoes(String name) {
+    super(name);
+  }
+
+  public LeatherShoes() {
+
+  }
+
   @Override
-  public String weared(String Dressed) {
-    return Dressed += "LeatherShoes ";
+  public String show() {
+    return person.dressed += "LeatherShoes ";
   }
 }

@@ -5,7 +5,7 @@ package com.jacob;
  */
 public class Tie extends Finery {
   @Override
-  public String weared(String Dressed) {
-    return Dressed += "Tie ";
+  public String show() {
+    return person.dressed += "Tie ";
   }
 }

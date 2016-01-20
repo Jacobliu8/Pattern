@@ -1,0 +1,44 @@
+@startuml
+
+class Person{
+#dressed
++name
++show()
+}
+
+class Finery<? extend Person>{
+#Person
+
++decorate(Person p)
++show()
+}
+
+class Suit<? extend Finery>{
++show()
+}
+
+class BigTrouser<? extend Finery>{
++show()
+}
+class LeatherShoes<? extend Finery>{
++show()
+}
+class Tie<? extend Finery>{
++show()
+}
+class Tshirt<? extend Finery>{
++show()
+}
+class Sneakers<? extend Finery>{
++show()
+}
+
+Finery *- Person
+Suit *- Finery
+BigTrouser *- Finery
+LeatherShoes *- Finery
+Tie *- Finery
+Tshirt *- Finery
+Sneakers *- Finery
+
+@enduml

@@ -3,6 +3,28 @@ package com.jacob;
 /**
  * Created by LIUJA8 on 1/20/2016.
  */
-public abstract class Finery {
-  public abstract String weared(String Dressed);
+public class Finery extends Person {
+
+  protected Person person;
+
+  public Finery(String name) {
+    super(name);
+  }
+
+  public Finery() {
+    super();
+  }
+
+  public void decorate(Person decoratedPerson) {
+    this.person = decoratedPerson;
+  }
+
+  @Override
+  public String show() {
+    if (person != null) {
+      return person.show();
+    } else {
+      return "streaking!!!";
+    }
+  }
 }

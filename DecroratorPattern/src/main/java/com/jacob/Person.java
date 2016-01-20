@@ -5,22 +5,16 @@ package com.jacob;
  */
 public class Person {
   private String name;
-  private String dressed = "";
+  protected String dressed = "";
 
   public Person(String name) {
     this.name = name;
   }
 
+  public Person() {}
+
   public String show() {
     return dressed + "Dressed " + name;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
   }
 
   public String getDressed() {
