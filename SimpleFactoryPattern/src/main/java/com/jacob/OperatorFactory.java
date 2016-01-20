@@ -5,7 +5,7 @@ package com.jacob;
  */
 public class OperatorFactory {
   private static String ADD = "+";
-   private static String SUBTRACT = "-";
+  private static String SUBTRACT = "-";
   private static String MULTIPLY = "*";
   private static String DIVIDE = "/";
 

@@ -1,0 +1,17 @@
+@startuml
+
+class Person{
+String name
++wearTshirt()
++wearBigTrouser()
++wearSneakers()
++wearSuit()
++wearTie()
++wearLeatherShoes()
++show()
+}
+
+class Object
+Object <|-- Person
+
+@enduml

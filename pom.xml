@@ -12,6 +12,7 @@
         <module>JunitCodeCopy</module>
         <module>SimpleFactoryPattern</module>
         <module>StrategyPattern</module>
+        <module>DecroratorPattern</module>
     </modules>
 
     <dependencies>
