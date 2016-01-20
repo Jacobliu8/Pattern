@@ -5,37 +5,29 @@ package com.jacob;
  */
 public class Person {
   private String name;
-  private String Dressed = "";
+  private String dressed = "";
 
   public Person(String name) {
     this.name = name;
   }
 
-  public void wearTshirt() {
-    Dressed += "T-shirt ";
-  }
-
-  public void wearBigTrouser() {
-    Dressed += "BigTrouser ";
-  }
-
-  public void wearSneakers() {
-    Dressed += "Sneakers ";
-  }
-
-  public void wearSuit() {
-    Dressed += "Suit ";
-  }
-
-  public void wearTie() {
-    Dressed += "Tie ";
-  }
-
-  public void wearLeatherShoes() {
-    Dressed += "LeatherShoes ";
-  }
-
   public String show() {
-    return Dressed + "Dressed " + name;
+    return dressed + "Dressed " + name;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getDressed() {
+    return dressed;
+  }
+
+  public void setDressed(String dressed) {
+    this.dressed = dressed;
   }
 }

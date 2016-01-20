@@ -1,0 +1,27 @@
+@startuml
+
+abstract class Finery{
++{abstract} String weared()
+}
+
+class Tshirt
+class BigTrouser
+class LeatherShoes
+class Sneakers
+class Suit
+class Tie
+
+Finery <|-- Tshirt
+Finery <|-- BigTrouser
+Finery <|-- LeatherShoes
+Finery <|-- Sneakers
+Finery <|-- Suit
+Finery <|-- Tie
+
+Class Person{
+-String name;
+-String dressed;
++String show();
+}
+
+@enduml

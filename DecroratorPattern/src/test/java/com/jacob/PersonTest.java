@@ -1,6 +1,5 @@
 package com.jacob;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -12,18 +11,24 @@ public class PersonTest {
   @Test
   public void ShouldShowTshirtAndBigTrouserAndSneakersDressPersonJacob() {
     Person Jacob = new Person("Jacob");
-    Jacob.wearTshirt();
-    Jacob.wearBigTrouser();
-    Jacob.wearSneakers();
+    Tshirt tshirt = new Tshirt();
+    BigTrouser bigTrouser = new BigTrouser();
+    Sneakers sneakers = new Sneakers();
+    Jacob.setDressed(tshirt.weared(Jacob.getDressed()));
+    Jacob.setDressed(bigTrouser.weared(Jacob.getDressed()));
+    Jacob.setDressed(sneakers.weared(Jacob.getDressed()));
     assertEquals(Jacob.show(), "T-shirt BigTrouser Sneakers Dressed Jacob");
   }
 
   @Test
   public void ShouldShowSuitTieLeatherShoesDressPersonJason() {
     Person Jason = new Person("Jason");
-    Jason.wearSuit();
-    Jason.wearTie();
-    Jason.wearLeatherShoes();
+    Suit suit = new Suit();
+    Tie tie = new Tie();
+    LeatherShoes leatherShoes = new LeatherShoes();
+    Jason.setDressed(suit.weared(Jason.getDressed()));
+    Jason.setDressed(tie.weared(Jason.getDressed()));
+    Jason.setDressed(leatherShoes.weared(Jason.getDressed()));
     assertEquals(Jason.show(), "Suit Tie LeatherShoes Dressed Jason");
   }
 }
