@@ -18,4 +18,12 @@ public class PersonTest {
     assertEquals(Jacob.show(), "T-shirt BigTrouser Sneakers Dressed Jacob");
   }
 
+  @Test
+  public void ShouldShowSuitTieLeatherShoesDressPersonJason() {
+    Person Jason = new Person("Jason");
+    Jason.wearSuit();
+    Jason.wearTie();
+    Jason.wearLeatherShoes();
+    assertEquals(Jason.show(), "Suit Tie LeatherShoes Dressed Jason");
+  }
 }
