@@ -9,39 +9,39 @@ import static junit.framework.Assert.assertEquals;
 public class WorkTest {
   @Test
   public void ShouldBeEnergyWhenBefore12AM() {
-    ProgramWork programWork = new ProgramWork();
-    assertEquals(programWork.getWorkState(9), "happy bee");
+    ProgramWork programWork = new ProgramWork(9);
+    assertEquals(programWork.getWorkState(programWork), "happy bee");
   }
 
   @Test
   public void shouldBeTiredBetween12AMTo2PM() {
-    ProgramWork programWork = new ProgramWork();
-    assertEquals(programWork.getWorkState(13), "hungry and tired, have a rest");
+    ProgramWork programWork = new ProgramWork(13);
+    assertEquals(programWork.getWorkState(programWork), "hungry and tired, have a rest");
   }
 
   @Test
   public void shouldBeTiredBetween2PMTo18PM() {
-    ProgramWork programWork = new ProgramWork();
-    assertEquals(programWork.getWorkState(15), "tired bee, keep working");
+    ProgramWork programWork = new ProgramWork(15);
+    assertEquals(programWork.getWorkState(programWork), "tired bee, keep working");
   }
 
   @Test
   public void shouldBeSadBetween18AMTo22PM() {
-    ProgramWork programWork = new ProgramWork();
-    assertEquals(programWork.getWorkState(19), "sad bee, work not finished, keep going");
+    ProgramWork programWork = new ProgramWork(19);
+    assertEquals(programWork.getWorkState(programWork), "sad bee, work not finished, keep going");
   }
 
   @Test
   public void shouldBeOutbreakOver22PM() {
-    ProgramWork programWork = new ProgramWork();
-    assertEquals(programWork.getWorkState(23), "No, need to sleep or die");
+    ProgramWork programWork = new ProgramWork(23);
+    assertEquals(programWork.getWorkState(programWork), "No, need to sleep or die");
   }
 
   @Test
   public void shouldBeHomeOver18PM() {
-    ProgramWork programWork = new ProgramWork();
+    ProgramWork programWork = new ProgramWork(18);
     programWork.setWorkFinished(true);
-    assertEquals(programWork.getWorkState(23), "work finished, go home freely");
+    assertEquals(programWork.getWorkState(programWork), "work finished, go home freely");
   }
 
 }
