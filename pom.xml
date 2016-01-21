@@ -13,6 +13,7 @@
         <module>SimpleFactoryPattern</module>
         <module>StrategyPattern</module>
         <module>DecroratorPattern</module>
+        <module>ObserverPattern</module>
     </modules>
 
     <dependencies>
