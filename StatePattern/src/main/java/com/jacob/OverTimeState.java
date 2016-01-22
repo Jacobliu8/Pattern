@@ -6,7 +6,7 @@ package com.jacob;
 public class OverTimeState extends WorkState {
 
   @Override
-  public String writeProgram(ProgramWork work) {
+  public String stateOnWork(ProgramWork work) {
     return "sad bee, work not finished, keep going";
   }
 }

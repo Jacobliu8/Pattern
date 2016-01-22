@@ -38,6 +38,6 @@ public class ProgramWork {
   }
 
   public String getWorkState(ProgramWork work) {
-    return state.writeProgram(work);
+    return state.stateOnWork(work);
   }
 }

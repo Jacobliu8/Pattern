@@ -15,11 +15,11 @@ public class PersonTest {
     BigTrouser bigTrouser = new BigTrouser();
     Sneakers sneakers = new Sneakers();
     tshirt.decorate(Jacob);
-    tshirt.show();
+    // tshirt.show();
     bigTrouser.decorate(Jacob);
-    bigTrouser.show();
+    // bigTrouser.show();
     sneakers.decorate(Jacob);
-    sneakers.show();
+    // sneakers.show();
     System.out.println(Jacob.getDressed());
     assertEquals(Jacob.show(), "T-shirt BigTrouser Sneakers Dressed Jacob");
   }
@@ -31,11 +31,11 @@ public class PersonTest {
     Tie tie = new Tie();
     LeatherShoes leatherShoes = new LeatherShoes();
     suit.decorate(Jason);
-    suit.show();
+    // suit.show();
     tie.decorate(Jason);
-    tie.show();
+    // tie.show();
     leatherShoes.decorate(Jason);
-    leatherShoes.show();
+    // leatherShoes.show();
     assertEquals(Jason.show(), "Suit Tie LeatherShoes Dressed Jason");
   }
 }

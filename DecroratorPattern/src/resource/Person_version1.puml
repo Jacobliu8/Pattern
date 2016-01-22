@@ -1,15 +1,15 @@
 @startuml
 
 class Person{
-String name
-String Dressed=""
-+wearTshirt()
-+wearBigTrouser()
-+wearSneakers()
-+wearSuit()
-+wearTie()
-+wearLeatherShoes()
-+String show()
-}
+       String name
+       String Dressed=""
+       +wearTshirt()
+       +wearBigTrouser()
+       +wearSneakers()
+       +wearSuit()
+       +wearTie()
+       +wearLeatherShoes()
+       +String show()
+       }
 
-@enduml
+       @enduml

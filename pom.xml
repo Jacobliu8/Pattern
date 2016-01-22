@@ -15,6 +15,7 @@
         <module>DecroratorPattern</module>
         <module>ObserverPattern</module>
         <module>StatePattern</module>
+        <module>AdapterPattern</module>
     </modules>
 
     <dependencies>

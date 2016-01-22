@@ -34,7 +34,7 @@ public class WorkTest {
   @Test
   public void shouldBeOutbreakOver22PM() {
     ProgramWork programWork = new ProgramWork(23);
-    assertEquals(programWork.getWorkState(programWork), "No, need to sleep or die");
+    assertEquals(programWork.getWorkState(programWork), "No, need to sleep");
   }
 
   @Test

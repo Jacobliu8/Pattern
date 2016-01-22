@@ -5,7 +5,7 @@ package com.jacob;
  */
 public class EveningState extends WorkState {
   @Override
-  public String writeProgram(ProgramWork work) {
+  public String stateOnWork(ProgramWork work) {
     if(work.isWorkFinished()){
       return "work finished, go home freely";
     } else {

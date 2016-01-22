@@ -5,7 +5,7 @@ package com.jacob;
  */
 public class AfterNoonState extends WorkState {
   @Override
-  public String writeProgram(ProgramWork work) {
+  public String stateOnWork(ProgramWork work) {
     if (work.getWorkTime() < 18) {
       return "tired bee, keep working";
     } else {

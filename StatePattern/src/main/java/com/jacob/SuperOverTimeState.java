@@ -5,7 +5,7 @@ package com.jacob;
  */
 public class SuperOverTimeState extends WorkState {
   @Override
-  public String writeProgram(ProgramWork work) {
+  public String stateOnWork(ProgramWork work) {
     return "No, need to sleep or die";
   }
 }

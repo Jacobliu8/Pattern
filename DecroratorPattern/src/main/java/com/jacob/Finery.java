@@ -17,6 +17,7 @@ public class Finery extends Person {
 
   public void decorate(Person decoratedPerson) {
     this.person = decoratedPerson;
+    show();
   }
 
   @Override
@@ -24,7 +25,7 @@ public class Finery extends Person {
     if (person != null) {
       return person.show();
     } else {
-      return "streaking!!!";
+      return "ghost streaking!!!";
     }
   }
 }

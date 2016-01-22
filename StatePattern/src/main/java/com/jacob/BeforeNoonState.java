@@ -5,7 +5,7 @@ package com.jacob;
  */
 public class BeforeNoonState extends WorkState {
   @Override
-  public String writeProgram(ProgramWork work) {
+  public String stateOnWork(ProgramWork work) {
     if (work.getWorkTime() < 12) {
       return "happy bee";
     } else {
