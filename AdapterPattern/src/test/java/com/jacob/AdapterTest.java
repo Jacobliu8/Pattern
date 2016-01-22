@@ -1,10 +1,8 @@
 package com.jacob;
 
 import junit.framework.Assert;
-import org.junit.Test;
-import sun.jdbc.odbc.ee.PoolWorker;
 
-import java.net.Socket;
+import org.junit.Test;
 
 /**
  * Created by LIUJA8 on 1/22/2016.
@@ -27,9 +25,9 @@ public class AdapterTest {
   @Test
   public void europeSocketStandardAfterAdapterWorkInChina() {
     Outlet outlet = new Outlet("China");
-    Plug plug = new Plug("Europe");
-    PowerAdapter adapter = new PowerAdapter();
-    Assert.assertTrue(outlet.accept(adapter.convert(plug)));
+    PowerAdapter adapter = new PowerAdapter("Europe");
+    Assert.assertTrue(outlet.accept(adapter));
   }
   // TODO still not really AdapterPattern
 }
+
