@@ -31,4 +31,5 @@ public class AdapterTest {
     PowerAdapter adapter = new PowerAdapter();
     Assert.assertTrue(outlet.accept(adapter.convert(plug)));
   }
+  // TODO still not really AdapterPattern
 }
