@@ -9,25 +9,21 @@ import org.junit.Test;
  */
 public class AdapterTest {
   @Test
-  public void europeSocketStandardNotWorkInChina() {
-    Outlet outlet = new Outlet("China");
-    Plug plug = new Plug("Europe");
-    Assert.assertFalse(outlet.accept(plug));
+  public void DBSocketStandardWorking() {
+    DBSocketInterface dbSoket = new DBSocket();
+    Hotel hotel = new Hotel(dbSoket);
+    Assert.assertEquals(hotel.charge(), "powerWithTwoRound");
   }
 
   @Test
-  public void chinaSocketStandardWorkInChina() {
-    Outlet outlet = new Outlet("China");
-    Plug plug = new Plug("China");
-    Assert.assertTrue(outlet.accept(plug));
+  public void GBSocketStandardWorkInDBSocket() {
+    DBSocketInterface dbSoket = new DBSocket();
+    Hotel hotel = new Hotel(dbSoket);
+    GBSocketInterface gbSoket = new GBSocket();
+    PowerAdapter adapter = new PowerAdapter(gbSoket);
+    hotel.setDbSocket(adapter);
+    Assert.assertEquals(hotel.charge(), "powerWithThreeFlatS");
   }
 
-  @Test
-  public void europeSocketStandardAfterAdapterWorkInChina() {
-    Outlet outlet = new Outlet("China");
-    PowerAdapter adapter = new PowerAdapter("Europe");
-    Assert.assertTrue(outlet.accept(adapter));
-  }
-  // TODO still not really AdapterPattern
 }
 

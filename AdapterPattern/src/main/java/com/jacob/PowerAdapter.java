@@ -1,13 +1,16 @@
 package com.jacob;
 
 /**
- * Created by LIUJA8 on 1/22/2016.
+ * Created by LIUJA8 on 1/26/2016.
  */
-public class PowerAdapter extends Plug {
-  private Plug plug;
+public class PowerAdapter implements DBSocketInterface {
+  private GBSocketInterface gbSoket;
 
-  public PowerAdapter(String standard) {
-    super("China");
+  public PowerAdapter(GBSocketInterface gbSoket) {
+    this.gbSoket = gbSoket;
   }
 
+  public String powerWithTwoRound() {
+    return gbSoket.powerWithThreeFlatS();
+  }
 }

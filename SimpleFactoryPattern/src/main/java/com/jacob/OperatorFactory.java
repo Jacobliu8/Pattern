@@ -18,7 +18,6 @@ public class OperatorFactory {
     }
     if (MULTIPLY.equals(operate)) {
       return new MulOperator(numberA, numberB);
-
     }
     if (DIVIDE.equals(operate)) {
       return new DivOperator(numberA, numberB);

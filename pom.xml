@@ -16,6 +16,7 @@
         <module>ObserverPattern</module>
         <module>StatePattern</module>
         <module>AdapterPattern</module>
+        <module>ProxyPattern</module>
     </modules>
 
     <dependencies>
