@@ -8,6 +8,7 @@
     <artifactId>JunitCodeKataRoot</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+
     <modules>
         <module>JunitCodeCopy</module>
         <module>SimpleFactoryPattern</module>
@@ -17,6 +18,7 @@
         <module>StatePattern</module>
         <module>AdapterPattern</module>
         <module>ProxyPattern</module>
+        <module>RefactorBook</module>
     </modules>
 
     <dependencies>
@@ -25,6 +27,62 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.jbehave</groupId>
+            <artifactId>jbehave-core</artifactId>
+            <version>4.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.1.5</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm</artifactId>
+            <version>1.1.5</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.1.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.cobertura</groupId>
+            <artifactId>cobertura</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>2.12.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>2.0.2-beta</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>1.1.5</version>
+        </dependency>
     </dependencies>
+
 
 </project>
