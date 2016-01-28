@@ -10,7 +10,7 @@
     <version>1.0.0</version>
 
     <modules>
-        <module>JunitCodeCopy</module>
+        <module>BDDTest</module>
         <module>SimpleFactoryPattern</module>
         <module>StrategyPattern</module>
         <module>DecroratorPattern</module>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.11</version>
         </dependency>
         <dependency>
             <groupId>org.jbehave</groupId>
@@ -80,6 +80,11 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-core</artifactId>
+            <version>1.1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
             <version>1.1.5</version>
         </dependency>
     </dependencies>

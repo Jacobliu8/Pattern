@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.83" errors="0" skipped="0" tests="8" name="com.jacob.AppTest">
+  <properties>
+    <property name="java.vm.vendor.url.bug" value="http://download.oracle.com/docs/cd/E15289_01/go2troubleshooting.html"/>
+    <property name="idea.version" value="15.0.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\bin"/>
+    <property name="java.vm.version" value="R28.2.0-79-146777-1.6.0_29-20111005-1808-windows-ia32"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://www.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Oracle JRockit(R)"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7536"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.vendor.url" value="http://www.oracle.com/"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\gitHome\JunitCodeKata"/>
+    <property name="java.runtime.version" value="1.6.0_29-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\liuja8\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\DEV tool\IntelliJ IDEA Community Edition 15.0.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\bin;C:\Windows\system32;C:\Windows;C:\tibco\tibrv\8.3\bin;C:\tibco\terrde26\bin\x64;D:\app\LIUJA8\product\11.2.0\dbhome_1\bin;C:\tibco\tibrv\8.1\bin;D:\DEV tool\JAVA64\jdk1.7.0_45\bin;D:\DEV tool\ant171\bin;D:\DEV tool\apache-maven-3.0.4\bin;D:\DEV tool\JAVA64\jdk1.7.0_45\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;Z:\IRIS2-CP\PROD\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;D:\DEV tool\nodeJS\;C:\Users\liuja8\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="Oracle JRockit(R) Optimizing Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\liuja8"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="idea.launcher.bin.path" value="D:\DEV tool\IntelliJ IDEA Community Edition 15.0.2\bin"/>
+    <property name="user.name" value="LIUJA8"/>
+    <property name="java.class.path" value="D:\DEV tool\IntelliJ IDEA Community Edition 15.0.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.4.jar;D:\DEV tool\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.3 -s D:\DEV tool\apache-maven-3.0.4\conf\settings.xml test"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="compiled mode"/>
+    <property name="java.version" value="1.6.0_29"/>
+    <property name="java.ext.dirs" value="C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\ext"/>
+    <property name="kernel.download.enabled" value="false"/>
+    <property name="sun.boot.class.path" value="C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\resources.jar;C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\rt.jar;C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\sunrsasign.jar;C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\jsse.jar;C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\jce.jar;C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\lib\charsets.jar;C:\Oracle\Middleware\jrockit_160_29_D1.2.0-10\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\DEV tool\IntelliJ IDEA Community Edition 15.0.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://download.oracle.com/docs/cd/E15289_01/go2troubleshooting.html"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.002" classname="| 3 | 1 | 2 |" name="\u5047\u8BBE\u6211\u7684\u4EFB\u52A1\u6E05\u5355\u91CC3\u4E2A\u4EFB\u52A1"/>
+  <testcase time="0" classname="| 3 | 1 | 2 |" name="\u5F53\u6211\u5B8C\u62101\u4EF6\u4EFB\u52A1\u4E4B\u540E"/>
+  <testcase time="0" classname="| 3 | 1 | 2 |" name="\u90A3\u4E48\u6211\u8FD8\u5269\u4E0B2\u4EF6\u5B8C\u672A\u6210\u7684\u4EFB\u52A1"/>
+  <testcase time="0" classname="| 3 | 1 | 2 |" name="| 3 | 1 | 2 |"/>
+  <testcase time="0" classname="| 5 | 1 | 4 |" name="\u5047\u8BBE\u6211\u7684\u4EFB\u52A1\u6E05\u5355\u91CC5\u4E2A\u4EFB\u52A1"/>
+  <testcase time="0" classname="| 5 | 1 | 4 |" name="\u5F53\u6211\u5B8C\u62101\u4EF6\u4EFB\u52A1\u4E4B\u540E"/>
+  <testcase time="0" classname="| 5 | 1 | 4 |" name="\u90A3\u4E48\u6211\u8FD8\u5269\u4E0B4\u4EF6\u5B8C\u672A\u6210\u7684\u4EFB\u52A1"/>
+  <testcase time="0" classname="| 5 | 1 | 4 |" name="| 5 | 1 | 4 |"/>
+</testsuite>
