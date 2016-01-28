@@ -1,9 +1,7 @@
-package com.jacob;
+package com.jacob.steps;
 
-import cucumber.api.PendingException;
+import com.jacob.runner.TodoList;
 import org.junit.Assert;
-
-import com.jacob.TodoList;
 
 import cucumber.api.java.zh_cn.假设;
 import cucumber.api.java.zh_cn.当;
@@ -36,7 +34,7 @@ public class TodoSteps {
   }
 
   @当("^我获得(\\d+)件任务之后$")
-  public void igetNewTasks(int getTasks) throws Throwable {
+  public void iGetNewTasks(int getTasks) throws Throwable {
     // Write code here that turns the phrase above into concrete actions
     todo.setNewTasks(getTasks);
   }
